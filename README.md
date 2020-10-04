@@ -1,0 +1,2 @@
+# Amazon-Product-Review-Analysis-Using-Deep-Learning
+Amazon Product Review Analysis is Deeplearning based website created with django. It takes the all review page link of a product and gave us how much people like that product. It tell us how positive the product is among the reviewer or consumer by learning about the sentiment of all reviews given by  the consumers. this approach best because 3 star review of one person for a perticular product may not be same to 3 star review of other person for same product
