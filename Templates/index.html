@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}DeepLearningDemo{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/index.css' %}">
+    <link rel="stylesheet" href="{% static 'style/project.css' %}">
+</head>
+<body>
+    <div class="header" >
+
+    	<a href="{% url 'home' %}" class="heddermaina">Dilshad Ali</a> 
+    	<center>
+    	<ul class="headerul">
+    		<li><a href="">Like My Work</a></li>
+    		<li><p class="headerp">|</p></li>
+    		<li><a href="">Any Suggestion</a></li>
+    		<li><p class="headerp">|</p></li>
+    		<li><a href="">About</a></li>
+    	</ul>
+    	</center>       
+    </div>
+    <div class="dldemoh">
+    	<center>
+    		<h1 class="glow">{% block glow %}Deep Learning Projects{% endblock %}</h1>
+    	</center> 	
+    </div>
+{% block content %}
+	<div class="projectcontainer">
+		<center>
+		<div class="priject1 project">
+			<a href="{% url 'project1' %}"><img class="pimage" src="{% static 'images/sentementanalysis2.jpg' %}" alt=""></a>
+		</div>
+		<div class="priject2 project">
+			<a href="{% url 'project2' %}"><img class="pimage" src="{% static 'images/dibetiespredection1.jpg' %}" alt=""></a>
+		</div>
+		<div class="priject3 project">
+			<a href="{% url 'project3' %}"><img class="pimage" src="{% static 'images/background.jpg' %}" alt=""></a>
+		</div>
+		</center>
+	</div>
+{% endblock %}
+
+</body>
+</html>

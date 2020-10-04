@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block title %}Project1{% endblock %}
+
+{% block glow %}Amazon Product Review Analysis{% endblock %}
+
+
+{% block content %}
+
+<div class="sentanalcont">
+        <center>
+            <h1 class="sentanalconth1"> Product Review is {{data1}}</h1>
+        </center>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <center>
+                <input type="text" class="sentanalcontinput" name="sentanalcontstr">
+            </center>
+            <center>
+                <button type="submit" name="sentanalcontbtn" value="jdfhkjd" class="sentanalcontbtn">Submit</button>
+            </center>
+        </form>
+        <center>
+
+           
+        </center>
+</div>
+
+
+
+{% endblock %}
